@@ -1,0 +1,14 @@
+
+> portfolio-app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.2 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.29.234:3000
+
+✓ Starting...
+✓ Ready in 3.8s
+○ Compiling / ...
+ GET / 200 in 15.9s (compile: 14.3s, render: 1648ms)
+○ Compiling /api/stats ...
+ GET /api/stats?leetcode=placeholder_leetcode&codechef=placeholder_codechef 404 in 9.0s (compile: 8.6s, render: 355ms)

@@ -1,0 +1,53 @@
+
+> portfolio-app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.2 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.58.164.215:3000
+
+✓ Starting...
+✓ Ready in 26.1s
+○ Compiling / ...
+ GET / 200 in 19.7s (compile: 18.5s, render: 1207ms)
+ GET /about 200 in 424ms (compile: 346ms, render: 78ms)
+ GET /stats 200 in 2.8s (compile: 2.8s, render: 71ms)
+Error fetching CodeChef data: Error [AxiosError]: Request failed with status code 404
+    at async GET (src\app\api\stats\route.ts:102:24)
+  100 |       // Note: CodeChef is aggressive with blocking. This is a best-effort simple scrape.
+  101 |       // In a production env, you might need a headless browser or a dedicated scraping API.
+> 102 |       const response = await axios.get(`https://www.codechef.com/users/${codechefUsername}`, {
+      |                        ^
+  103 |         headers: {
+  104 |           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+  105 |         } {
+  isAxiosError: true,
+  code: 'ERR_BAD_REQUEST',
+  config: [Object],
+  request: [ClientRequest],
+  response: [Object],
+  status: 404
+}
+ GET /api/stats?leetcode=VSDeadShot&codechef=vedanshsharma&hackerrank=vedanshsharma281 200 in 5.1s (compile: 2.3s, render: 2.8s)
+ GET /projects 200 in 2.3s (compile: 2.2s, render: 76ms)
+Error fetching CodeChef data: Error [AxiosError]: Request failed with status code 404
+    at async GET (src\app\api\stats\route.ts:102:24)
+  100 |       // Note: CodeChef is aggressive with blocking. This is a best-effort simple scrape.
+  101 |       // In a production env, you might need a headless browser or a dedicated scraping API.
+> 102 |       const response = await axios.get(`https://www.codechef.com/users/${codechefUsername}`, {
+      |                        ^
+  103 |         headers: {
+  104 |           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+  105 |         } {
+  isAxiosError: true,
+  code: 'ERR_BAD_REQUEST',
+  config: [Object],
+  request: [ClientRequest],
+  response: [Object],
+  status: 404
+}
+ GET /api/stats?leetcode=VSDeadShot&codechef=vedanshsharma&hackerrank=vedanshsharma281 200 in 1734ms (compile: 7ms, render: 1727ms)
+○ Compiling /_not-found/page ...
+ GET /certificates 404 in 17.9s (compile: 17.8s, render: 93ms)
+ GET /certificates 404 in 314ms (compile: 67ms, render: 246ms)
+ GET /certificates 404 in 221ms (compile: 30ms, render: 191ms)
