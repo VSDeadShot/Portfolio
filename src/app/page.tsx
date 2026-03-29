@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from "@/components/ui/Navbar";
 import { Hero } from "@/components/ui/Hero";
 import { TechMarquee } from "@/components/ui/TechMarquee";
@@ -5,6 +7,7 @@ import { Projects } from "@/components/ui/Projects";
 import BlurText from "@/components/ui/BlurText";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -14,8 +17,14 @@ export default function Home() {
       
       <TechMarquee />
 
-      <section className="py-24 px-4 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-12">
+      <section className="py-24 px-4 max-w-7xl mx-auto overflow-hidden">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-12"
+        >
           <div className="space-y-2">
             <BlurText 
               text="Featured Projects" 
@@ -36,7 +45,7 @@ export default function Home() {
           >
             View Full Portfolio <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </Link>
-        </div>
+        </motion.div>
         
         <Projects limit={3} />
       </section>

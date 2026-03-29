@@ -149,7 +149,13 @@ interface TimelineItemProps {
 
 function TimelineItem({ role, company, date, description }: TimelineItemProps) {
     return (
-        <div className="relative pl-8 group">
+        <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5 }}
+            className="relative pl-8 group"
+        >
             <span className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-background border-2 border-white/20 group-hover:border-primary transition-colors" />
             <h3 className="text-lg font-semibold">{role}</h3>
             <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
@@ -158,6 +164,6 @@ function TimelineItem({ role, company, date, description }: TimelineItemProps) {
                 <span className="flex items-center gap-1"><Calendar size={12} /> {date}</span>
             </div>
             <p className="text-sm text-gray-400">{description}</p>
-        </div>
+        </motion.div>
     );
 }
