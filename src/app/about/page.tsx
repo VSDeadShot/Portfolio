@@ -72,7 +72,7 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="prose prose-invert mx-auto bg-card/50 p-8 rounded-2xl border border-white/5 backdrop-blur-sm"
+          className="prose prose-invert mx-auto bg-black/20 p-8 rounded-2xl border border-white/5 backdrop-blur-sm"
         >
           <BlurText 
             text="I'm a Software Engineer and Competitive Programmer based in India. I thrive on the thrill of solving algorithmic challenges and translating those problem-solving skills into robust, full-stack applications. Currently pursuing my B.Tech in Computer Science, I'm passionate about building systems that are both highly performant and user-centric. When I'm not grinding on LeetCode or CodeChef, you can find me exploring new tech stacks or building side projects."
