@@ -47,11 +47,11 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
       onMouseMove={handleMouseMove}
-      className="group relative rounded-xl bg-white/5 border border-white/10 overflow-hidden"
+      className="group relative rounded-3xl bg-white/5 border border-white/10 overflow-hidden"
     >
       {/* Spotlight Effect */}
       <motion.div
-        className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100"
+        className="pointer-events-none absolute -inset-px rounded-3xl opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           background: useMotionTemplate`
             radial-gradient(
@@ -66,7 +66,7 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
       {/* Content Container */}
       <div className="relative h-full flex flex-col p-6">
         <div className="flex items-center justify-between mb-4">
-          <div className="p-3 rounded-lg bg-primary/10 text-primary">
+          <div className="p-3 rounded-2xl bg-primary/10 text-primary">
             <Folder size={20} />
           </div>
           <div className="flex gap-3">
@@ -109,7 +109,7 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
           {project.tags.map((tag: string) => (
             <span 
               key={tag} 
-              className="px-2 py-1 text-xs font-medium rounded-full bg-white/5 text-gray-300 border border-white/5"
+              className="px-2 py-1 text-xs font-medium rounded-xl bg-white/5 text-gray-300 border border-white/5"
             >
               {tag}
             </span>
