@@ -52,7 +52,7 @@ export function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center lg:text-left z-10 space-y-6"
         >
-          <div className="inline-block px-3 py-1 mb-4 rounded-full border border-primary/20 bg-primary/10">
+          <div className="inline-block px-3 py-1 mb-4 rounded-2xl border border-primary/20 bg-primary/10">
             <BlurText 
               text="Hello World, I'm" 
               delay={50} 
@@ -67,7 +67,7 @@ export function Hero() {
               delay={50}
               animateBy="letters"
               direction="top"
-              className="text-5xl md:text-7xl font-bold tracking-tight text-white justify-center lg:justify-start"
+              className="text-5xl md:text-7xl font-bold tracking-tighter text-white justify-center lg:justify-start"
             />
           </div>
 
@@ -83,7 +83,7 @@ export function Hero() {
               href="/projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-primary text-white rounded-full font-medium shadow-[0_0_20px_rgba(124,58,237,0.4)] hover:shadow-[0_0_30px_rgba(124,58,237,0.6)] hover:bg-primary/90 transition-all flex items-center justify-center gap-2"
+              className="px-8 py-3 bg-primary text-white rounded-2xl font-medium shadow-[0_0_20px_rgba(124,58,237,0.4)] hover:shadow-[0_0_30px_rgba(124,58,237,0.6)] hover:bg-primary/90 transition-all flex items-center justify-center gap-2"
             >
               View Work
             </motion.a>
@@ -92,7 +92,7 @@ export function Hero() {
               target="_blank"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-white/5 backdrop-blur-md text-white rounded-full font-medium border border-white/10 hover:bg-white/10 transition-all"
+              className="px-8 py-3 bg-white/10 backdrop-blur-md text-white rounded-2xl font-medium hover:bg-white/15 transition-all"
             >
               GitHub
             </motion.a>

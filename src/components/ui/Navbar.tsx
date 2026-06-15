@@ -30,7 +30,7 @@ export function Navbar() {
       <div 
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
-        className="pointer-events-auto flex items-end gap-2 px-4 py-3 rounded-2xl border border-white/10 bg-black/40 backdrop-blur-md shadow-xl"
+        className="pointer-events-auto flex items-end gap-2 px-4 py-3 rounded-[2rem] border border-white/10 bg-black/20 backdrop-blur-2xl shadow-xl"
       >
         {navItems.map((item) => (
            <DockItem key={item.name} mouseX={mouseX} item={item} isActive={pathname === item.href} />
@@ -57,7 +57,7 @@ function DockItem({ mouseX, item, isActive }: { mouseX: MotionValue, item: any, 
         ref={ref}
         style={{ width }}
         className={cn(
-          "aspect-square rounded-full flex items-center justify-center relative transition-colors group",
+          "aspect-square rounded-2xl flex items-center justify-center relative transition-colors group",
           isActive ? "bg-primary/20 text-primary border border-primary/50" : "bg-white/5 text-muted-foreground border border-white/5 hover:bg-white/10"
         )}
       >

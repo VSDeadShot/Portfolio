@@ -28,7 +28,7 @@ export default function Home() {
           <div className="space-y-2">
             <BlurText 
               text="Featured Projects" 
-              className="text-3xl md:text-4xl font-bold tracking-tight" 
+              className="text-3xl md:text-4xl font-bold tracking-tighter" 
               animateBy="letters" 
               delay={50}
             />
