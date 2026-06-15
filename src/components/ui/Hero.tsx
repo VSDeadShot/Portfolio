@@ -83,6 +83,7 @@ export function Hero() {
               href="/projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
               className="px-8 py-3 bg-primary text-white rounded-2xl font-medium shadow-[0_0_20px_rgba(124,58,237,0.4)] hover:shadow-[0_0_30px_rgba(124,58,237,0.6)] hover:bg-primary/90 transition-all flex items-center justify-center gap-2"
             >
               View Work
@@ -92,6 +93,7 @@ export function Hero() {
               target="_blank"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
               className="px-8 py-3 bg-white/10 backdrop-blur-md text-white rounded-2xl font-medium hover:bg-white/15 transition-all"
             >
               GitHub

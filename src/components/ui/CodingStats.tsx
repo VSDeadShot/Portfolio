@@ -198,7 +198,7 @@ interface StatCardProps {
 
 function StatCard({ title, icon: Icon, children, color, loading }: StatCardProps) {
   return (
-    <div className="group relative p-6 rounded-3xl bg-black/20 border border-white/5 overflow-hidden hover:border-white/10 transition-all duration-300 shadow-2xl shadow-black/50 hover:shadow-primary/5 h-full flex flex-col backdrop-blur-sm">
+    <div className="group relative p-6 rounded-3xl bg-black/20 border border-white/5 overflow-hidden hover:border-white/10 transition-all duration-300 hover:-translate-y-2 shadow-2xl shadow-black/50 hover:shadow-primary/5 h-full flex flex-col backdrop-blur-sm">
       {/* Dynamic Background Gradient */}
       <div className={cn("absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-br from-white/5 via-transparent to-transparent", color.replace('text-', 'bg-').replace('500', '500/10'))} />
       

@@ -63,7 +63,7 @@ function CertificateCard({ cert, index }: { cert: any, index: number }) {
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
       onMouseMove={handleMouseMove}
-      className="group relative rounded-3xl bg-white/5 border border-white/5 shadow-2xl shadow-black/50 overflow-hidden"
+      className="group relative rounded-3xl bg-white/5 border border-white/5 shadow-2xl shadow-black/50 overflow-hidden transition-transform duration-300 hover:-translate-y-2"
     >
       {/* Spotlight Effect */}
       <motion.div
