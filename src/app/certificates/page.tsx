@@ -35,7 +35,7 @@ export default function CertificatesPage() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-20 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm">
+          <div className="text-center py-20 bg-white/5 rounded-3xl border border-white/5 shadow-2xl shadow-black/50 backdrop-blur-sm">
             <Award className="w-16 h-16 text-primary mx-auto mb-4 opacity-50" />
             <h3 className="text-2xl font-semibold mb-2">Coming Soon</h3>
             <p className="text-muted-foreground">I'm currently earning new certifications. Check back soon!</p>
@@ -63,11 +63,11 @@ function CertificateCard({ cert, index }: { cert: any, index: number }) {
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
       onMouseMove={handleMouseMove}
-      className="group relative rounded-xl bg-white/5 border border-white/10 overflow-hidden"
+      className="group relative rounded-3xl bg-white/5 border border-white/5 shadow-2xl shadow-black/50 overflow-hidden"
     >
       {/* Spotlight Effect */}
       <motion.div
-        className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100"
+        className="pointer-events-none absolute -inset-px rounded-3xl opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           background: useMotionTemplate`
             radial-gradient(
@@ -82,7 +82,7 @@ function CertificateCard({ cert, index }: { cert: any, index: number }) {
       {/* Content Container */}
       <div className="relative h-full flex flex-col p-6">
         <div className="flex items-center justify-between mb-4">
-          <div className="p-3 rounded-lg bg-primary/10 text-primary">
+          <div className="p-3 rounded-2xl bg-primary/10 text-primary">
             <Award size={24} />
           </div>
           <a 
@@ -125,7 +125,7 @@ function CertificateCard({ cert, index }: { cert: any, index: number }) {
           {cert.skills.map((skill: string) => (
             <span 
               key={skill} 
-              className="px-2 py-1 text-xs font-medium rounded-full bg-white/5 text-gray-300 border border-white/5"
+              className="px-2 py-1 text-xs font-medium rounded-xl bg-white/5 text-gray-300 border border-white/5"
             >
               {skill}
             </span>

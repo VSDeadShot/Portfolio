@@ -198,7 +198,7 @@ interface StatCardProps {
 
 function StatCard({ title, icon: Icon, children, color, loading }: StatCardProps) {
   return (
-    <div className="group relative p-6 rounded-2xl bg-black/40 border border-white/5 overflow-hidden hover:border-white/10 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5 h-full flex flex-col backdrop-blur-sm">
+    <div className="group relative p-6 rounded-3xl bg-black/20 border border-white/5 overflow-hidden hover:border-white/10 transition-all duration-300 shadow-2xl shadow-black/50 hover:shadow-primary/5 h-full flex flex-col backdrop-blur-sm">
       {/* Dynamic Background Gradient */}
       <div className={cn("absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-br from-white/5 via-transparent to-transparent", color.replace('text-', 'bg-').replace('500', '500/10'))} />
       
@@ -207,7 +207,7 @@ function StatCard({ title, icon: Icon, children, color, loading }: StatCardProps
 
       <div className="relative z-10 space-y-6 flex-1 flex flex-col">
         <div className="flex items-center gap-3 mb-2">
-          <div className={cn("p-3 rounded-xl bg-white/5 shadow-inner ring-1 ring-white/10 group-hover:scale-110 transition-transform duration-300", color)}>
+          <div className={cn("p-3 rounded-2xl bg-white/5 shadow-inner ring-1 ring-white/10 group-hover:scale-110 transition-transform duration-300", color)}>
             <Icon size={24} />
           </div>
           <h3 className="text-xl font-bold tracking-tight">{title}</h3>
@@ -237,7 +237,7 @@ interface DifficultyBadgeProps {
 
 function DifficultyBadge({ label, count, color }: DifficultyBadgeProps) {
   return (
-    <div className={cn("flex flex-col items-center p-2 rounded-lg border border-white/5 backdrop-blur-md transition-all hover:scale-105", color)}>
+    <div className={cn("flex flex-col items-center p-2 rounded-2xl border border-white/5 shadow-md shadow-black/30 backdrop-blur-md transition-all hover:scale-105", color)}>
       <span className="text-lg font-bold"><AnimatedCounter value={count} /></span>
       <span className="text-[10px] uppercase tracking-wider opacity-80 font-semibold">{label}</span>
     </div>
@@ -246,7 +246,7 @@ function DifficultyBadge({ label, count, color }: DifficultyBadgeProps) {
 
 function BadgeCount({ count, color, label }: { count: number, color: string, label: string }) {
     return (
-        <div className="flex flex-col items-center bg-white/5 rounded-lg px-3 py-1.5 border border-white/5 hover:bg-white/10 transition-colors cursor-default">
+        <div className="flex flex-col items-center bg-white/5 rounded-xl px-3 py-1.5 border border-white/5 shadow-md shadow-black/30 hover:bg-white/10 transition-colors cursor-default">
             <span className={cn("font-bold text-lg", color)}><AnimatedCounter value={count} /></span>
             <span className="text-[10px] text-muted-foreground uppercase font-medium">{label}</span>
         </div>
