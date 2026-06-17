@@ -6,11 +6,39 @@ import { MouseEvent } from "react";
 
 const projects = [
   {
-    title: "Student Management System",
-    description: "A comprehensive website built for colleges to efficiently manage student records, attendance, and academic performance.",
-    tags: ["Next.js", "React", "Tailwind CSS", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    title: "Bixby PC Navigator",
+    description: "An advanced two-way bridge transforming Samsung's Bixby into a local AI orchestrator. Features secure local Node.js server relays, Google Gemini 2.5 LLM integration, and context-aware screen reading.",
+    tags: ["Node.js", "Python", "Google Gemini 2.5", "Bixby"],
+    github: "https://github.com/VSDeadShot/Bixby-PC-Navigator",
+    demo: "https://github.com/VSDeadShot/Bixby-PC-Navigator",
+  },
+  {
+    title: "FluxBudget",
+    description: "A beautifully designed personal finance tracker built with Electron and React. Features full dashboard analytics, a bucketing budget system, and offline-first local storage.",
+    tags: ["React 18", "Electron", "Tailwind CSS", "Recharts"],
+    github: "https://github.com/VSDeadShot/FluxBudget",
+    demo: "https://github.com/VSDeadShot/FluxBudget",
+  },
+  {
+    title: "OmniTask",
+    description: "A centralized, developer-focused task manager featuring a premium React dashboard and a global CLI for seamlessly managing to-dos across multiple projects.",
+    tags: ["React 19", "Express.js", "Vite", "CLI"],
+    github: "https://github.com/VSDeadShot/OmniTask",
+    demo: "https://github.com/VSDeadShot/OmniTask",
+  },
+  {
+    title: "Portfolio",
+    description: "My personal developer portfolio built with Next.js and Framer Motion, featuring a sleek, premium Samsung One UI inspired aesthetic.",
+    tags: ["Next.js 16", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/VSDeadShot/Portfolio",
+    demo: "https://vedanshsharma.vercel.app",
+  },
+  {
+    title: "University RDBMS",
+    description: "A comprehensive Relational Database Management System built to efficiently manage university administration, student records, and academic data.",
+    tags: ["TypeScript", "SQL", "Database Management"],
+    github: "https://github.com/VSDeadShot/university-rdbms",
+    demo: "https://github.com/VSDeadShot/university-rdbms",
   },
 ];
 
