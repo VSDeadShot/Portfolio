@@ -2,8 +2,6 @@
 
 > A sleek, highly interactive personal portfolio built with Next.js. The design language is heavily inspired by Samsung's **One UI**, featuring deep soft shadows, frosted glassmorphism, precise squircle shapes, and smooth tactile animations.
 
-![Portfolio Preview](public/showcase.png) <!-- Note: Add a screenshot of your portfolio to the public folder named showcase.png to see it here! -->
-
 ## 🌐 Live Demo
 Check out the live website: **[vedanshsharma.vercel.app](https://vedanshsharma.vercel.app/)**
 
