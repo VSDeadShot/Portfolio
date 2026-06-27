@@ -48,10 +48,10 @@ export function Globe() {
            style={{ 
              width: "100%", 
              height: "100%",
-             maskImage: "radial-gradient(circle, white 50%, transparent 100%)",
-             WebkitMaskImage: "radial-gradient(circle, white 50%, transparent 100%)" 
+             maskImage: "radial-gradient(circle closest-side, black 80%, transparent 100%)",
+             WebkitMaskImage: "radial-gradient(circle closest-side, black 80%, transparent 100%)" 
            }}
-           className="cursor-grab active:cursor-grabbing relative z-10 mix-blend-screen"
+           className="cursor-grab active:cursor-grabbing relative z-10"
          />
        </div>
     </div>
