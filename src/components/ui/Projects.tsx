@@ -40,6 +40,13 @@ const projects = [
     github: "https://github.com/VSDeadShot/university-rdbms",
     demo: "https://github.com/VSDeadShot/university-rdbms",
   },
+  {
+    title: "DSA Problem Tracker",
+    description: "A full-stack spaced repetition app built to help students retain Data Structures and Algorithms problems via an integrated SM-2 algorithm.",
+    tags: ["Next.js 15", "TypeScript", "PostgreSQL", "Supabase"],
+    github: "https://github.com/VSDeadShot/DSA-Tracker",
+    demo: "https://trackingdsa.vercel.app",
+  },
 ];
 
 import BlurText from "./BlurText";
