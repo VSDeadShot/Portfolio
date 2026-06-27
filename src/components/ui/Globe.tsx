@@ -40,13 +40,18 @@ export function Globe() {
   }, []);
 
   return (
-    <div className="w-full h-full flex items-center justify-start relative">
-       <div className="relative w-full aspect-square max-w-[500px]">
+    <div className="w-full h-full flex items-center justify-center lg:justify-start relative">
+       <div className="relative w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px] aspect-square">
          <div className="absolute inset-0 bg-primary/10 blur-[100px] rounded-full pointer-events-none transform -translate-y-10" />
          <canvas
            ref={canvasRef}
-           style={{ width: "100%", height: "100%" }}
-           className="cursor-grab active:cursor-grabbing relative z-10"
+           style={{ 
+             width: "100%", 
+             height: "100%",
+             maskImage: "radial-gradient(circle, white 50%, transparent 100%)",
+             WebkitMaskImage: "radial-gradient(circle, white 50%, transparent 100%)" 
+           }}
+           className="cursor-grab active:cursor-grabbing relative z-10 mix-blend-screen"
          />
        </div>
     </div>

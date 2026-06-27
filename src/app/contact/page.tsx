@@ -44,7 +44,7 @@ export default function Contact() {
             </div>
 
             {/* Interactive Globe */}
-            <div className="w-full relative flex justify-start -ml-4 md:-ml-8">
+            <div className="w-full relative flex justify-center lg:justify-start py-8">
                <Globe />
             </div>
 
