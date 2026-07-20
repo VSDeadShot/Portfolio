@@ -47,6 +47,27 @@ const projects = [
     github: "https://github.com/VSDeadShot/DSA-Tracker",
     demo: "https://trackingdsa.vercel.app",
   },
+  {
+    title: "Macro Tracker",
+    description: "A photo-based macro tracker for vegetarian meal logging, using AI vision to estimate protein, carbs, and calories.",
+    tags: ["Next.js 16", "Prisma", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/VSDeadShot/macro-tracker",
+    demo: "https://macro-tracker-livid.vercel.app",
+  },
+  {
+    title: "NowBrief",
+    description: "A browser extension that replaces your new tab page with a personal daily dashboard, pulling live data from your own projects, GitHub, news, and weather.",
+    tags: ["React 19", "Vite", "Tailwind CSS", "Browser Extension"],
+    github: "https://github.com/VSDeadShot/now-brief",
+    demo: "https://github.com/VSDeadShot/now-brief",
+  },
+  {
+    title: "Commit Gen",
+    description: "A CLI tool that generates Conventional Commit messages from staged git diffs using a local LLM via Ollama.",
+    tags: ["Node.js", "CLI", "Ollama", "Commander.js"],
+    github: "https://github.com/VSDeadShot/commit-gen",
+    demo: "https://github.com/VSDeadShot/commit-gen",
+  },
 ];
 
 import BlurText from "./BlurText";
