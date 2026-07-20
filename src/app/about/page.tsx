@@ -90,17 +90,8 @@ export default function About() {
            <TechMarquee />
         </section>
 
-        {/* Experience & Education */}
-        <section className="grid md:grid-cols-2 gap-12">
-            <TimelineSection title="Experience" icon={Briefcase}>
-                <TimelineItem 
-                    role="Software Engineer Intern"
-                    company="Adobe"
-                    date="2024"
-                    description="Contributed to core product features, optimized application performance, and collaborated with cross-functional teams to deliver high-quality software solutions."
-                />
-            </TimelineSection>
-
+        {/* Education */}
+        <section className="max-w-2xl mx-auto w-full">
             <TimelineSection title="Education" icon={GraduationCap}>
                 <TimelineItem 
                     role="B.Tech Computer Science and Engineering"
