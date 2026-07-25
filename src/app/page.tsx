@@ -18,35 +18,36 @@ export default function Home() {
       <TechMarquee />
 
       <section className="py-24 px-4 max-w-7xl mx-auto overflow-hidden">
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-12"
-        >
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-12">
           <div className="space-y-2">
-            <BlurText 
-              text="Featured Projects" 
-              className="text-3xl md:text-4xl font-bold tracking-tighter" 
-              animateBy="letters" 
+            <BlurText
+              text="Featured Projects"
+              className="text-3xl md:text-4xl font-bold tracking-tighter"
+              animateBy="letters"
               delay={50}
             />
-            <BlurText 
-              text="A selection of my recent technical experiments and applications." 
-              className="text-muted-foreground text-lg" 
+            <BlurText
+              text="A selection of my recent technical experiments and applications."
+              className="text-muted-foreground text-lg"
               animateBy="words"
               delay={30}
             />
           </div>
-          <Link 
-            href="/projects"
-            className="group flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors"
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
           >
-            View Full Portfolio <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </motion.div>
-        
+            <Link
+              href="/projects"
+              className="group flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors"
+            >
+              View Full Portfolio <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </motion.div>
+        </div>
+
         <Projects limit={3} />
       </section>
       

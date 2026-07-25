@@ -98,10 +98,6 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
       onMouseMove={handleMouseMove}
       className="group relative rounded-3xl bg-white/5 border border-white/5 shadow-2xl shadow-black/50 overflow-hidden transition-transform duration-300 hover:-translate-y-2"
     >
@@ -144,20 +140,20 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
         </div>
 
         <div className="mb-2">
-            <BlurText 
-                text={project.title} 
-                className="text-xl font-bold group-hover:text-primary transition-colors" 
-                animateBy="words"
-                delay={40}
+            <BlurText
+                text={project.title}
+                className="text-xl font-bold group-hover:text-primary transition-colors"
+                animateBy="letters"
+                delay={30}
             />
         </div>
-        
+
         <div className="mb-4 flex-1">
-             <BlurText 
-                text={project.description} 
-                className="text-sm text-muted-foreground" 
+             <BlurText
+                text={project.description}
+                className="text-sm text-muted-foreground"
                 animateBy="words"
-                delay={20}
+                delay={35}
             />
         </div>
 
