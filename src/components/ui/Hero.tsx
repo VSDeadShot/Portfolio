@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 import { useEffect, useState } from "react";
 import { InteractiveGrid } from "./InteractiveGrid";
 
@@ -88,7 +89,7 @@ export function Hero() {
             >
               View Work
             </motion.a>
-            <motion.a 
+            <motion.a
               href="https://github.com/VSDeadShot"
               target="_blank"
               whileHover={{ scale: 1.05 }}
@@ -97,6 +98,17 @@ export function Hero() {
               className="px-8 py-3 bg-white/10 backdrop-blur-md text-white rounded-2xl font-medium hover:bg-white/15 transition-all"
             >
               GitHub
+            </motion.a>
+            <motion.a
+              href="/Vedansh_Sharma_Resume.pdf"
+              download
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              className="px-8 py-3 bg-white/10 backdrop-blur-md text-white rounded-2xl font-medium hover:bg-white/15 transition-all flex items-center justify-center gap-2"
+            >
+              <Download size={18} />
+              Resume
             </motion.a>
           </div>
         </motion.div>
