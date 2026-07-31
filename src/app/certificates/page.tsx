@@ -6,7 +6,16 @@ import BlurText from "@/components/ui/BlurText";
 import { Award, ExternalLink, Calendar } from "lucide-react";
 import { MouseEvent } from "react";
 
-const certificates: any[] = [];
+const certificates: any[] = [
+  {
+    title: "Claude 101",
+    issuer: "Anthropic",
+    date: "Jul 2026",
+    link: "/certificates/claude-101.pdf",
+    description: "Completed Anthropic's introductory course covering the fundamentals of working with Claude, including prompting techniques and practical AI application development.",
+    skills: ["Claude", "Prompt Engineering", "AI Fundamentals"],
+  },
+];
 
 export default function CertificatesPage() {
   return (
