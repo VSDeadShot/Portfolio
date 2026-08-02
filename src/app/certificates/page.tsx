@@ -15,6 +15,14 @@ const certificates: any[] = [
     description: "Completed Anthropic's introductory course covering the fundamentals of working with Claude, including prompting techniques and practical AI application development.",
     skills: ["Claude", "Prompt Engineering", "AI Fundamentals"],
   },
+  {
+    title: "AI Fluency: Framework & Foundations",
+    issuer: "Anthropic",
+    date: "Aug 2026",
+    link: "/certificates/ai-fluency-framework-foundations.pdf",
+    description: "Completed Anthropic's course on the AI Fluency framework, covering the core principles for effectively and critically collaborating with AI systems.",
+    skills: ["AI Fluency", "AI Collaboration", "Critical Thinking"],
+  },
 ];
 
 export default function CertificatesPage() {
