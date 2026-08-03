@@ -23,6 +23,14 @@ const certificates: any[] = [
     description: "Completed Anthropic's course on the AI Fluency framework, covering the core principles for effectively and critically collaborating with AI systems.",
     skills: ["AI Fluency", "AI Collaboration", "Critical Thinking"],
   },
+  {
+    title: "Claude Code in Action",
+    issuer: "Anthropic",
+    date: "Aug 2026",
+    link: "/certificates/claude-code-in-action.pdf",
+    description: "Completed Anthropic's course on using Claude Code for real-world agentic development workflows, covering practical techniques for building and shipping software with Claude.",
+    skills: ["Claude Code", "Agentic Development", "AI Fundamentals"],
+  },
 ];
 
 export default function CertificatesPage() {
