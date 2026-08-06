@@ -31,6 +31,14 @@ const certificates: any[] = [
     description: "Completed Anthropic's course on using Claude Code for real-world agentic development workflows, covering practical techniques for building and shipping software with Claude.",
     skills: ["Claude Code", "Agentic Development", "AI Fundamentals"],
   },
+  {
+    title: "Introduction to Claude Cowork",
+    issuer: "Anthropic",
+    date: "Aug 2026",
+    link: "/certificates/introduction-to-claude-cowork.pdf",
+    description: "Completed Anthropic's introductory course on Claude Cowork, covering how to collaborate with Claude as a teammate on shared tasks and workflows.",
+    skills: ["Claude Cowork", "AI Collaboration", "AI Fundamentals"],
+  },
 ];
 
 export default function CertificatesPage() {
