@@ -31,7 +31,7 @@ const projects = [
     description: "My personal developer portfolio built with Next.js and Framer Motion, featuring a sleek, premium Samsung One UI inspired aesthetic.",
     tags: ["Next.js 16", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/VSDeadShot/Portfolio",
-    demo: "https://vedanshsharma.vercel.app",
+    demo: "https://vedanshsharma.dev",
   },
   {
     title: "University RDBMS",
