@@ -68,6 +68,13 @@ const projects = [
     github: "https://github.com/VSDeadShot/commit-gen",
     demo: "https://github.com/VSDeadShot/commit-gen",
   },
+  {
+    title: "Watch Next",
+    description: "A full-stack watch-history recommender that unifies Netflix and YouTube viewing data via import, surfacing availability-filtered \"what to watch next\" suggestions to cut decision paralysis.",
+    tags: ["FastAPI", "SQLAlchemy", "PostgreSQL", "Next.js", "Tailwind CSS"],
+    github: "https://github.com/VSDeadShot/watch-next",
+    demo: "https://github.com/VSDeadShot/watch-next",
+  },
 ];
 
 import BlurText from "./BlurText";
