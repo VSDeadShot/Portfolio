@@ -75,6 +75,13 @@ const projects = [
     github: "https://github.com/VSDeadShot/watch-next",
     demo: "https://github.com/VSDeadShot/watch-next",
   },
+  {
+    title: "Interview Prep Flashcards",
+    description: "Spaced-repetition (SM-2) flashcards for CS-fundamentals interview prep — Spring Boot backend with a native Android client, offline-first sync, and AI-assisted card generation via the Gemini API.",
+    tags: ["Java", "Spring Boot", "Android", "PostgreSQL", "Gemini API"],
+    github: "https://github.com/VSDeadShot/interview-flashcards",
+    demo: "https://github.com/VSDeadShot/interview-flashcards",
+  },
 ];
 
 import BlurText from "./BlurText";
