@@ -63,10 +63,10 @@ const projects = [
   },
   {
     title: "Commit Gen",
-    description: "A CLI tool that generates Conventional Commit messages from staged git diffs using a local LLM via Ollama.",
-    tags: ["Node.js", "CLI", "Ollama", "Commander.js"],
+    description: "A CLI tool, published on npm, that generates Conventional Commit messages from staged git diffs using a local LLM via Ollama or the cloud-based Gemini API. Streams responses token by token and can auto-trigger on git commit via a git hook.",
+    tags: ["Node.js", "CLI", "Ollama", "Gemini API"],
     github: "https://github.com/VSDeadShot/commit-gen",
-    demo: "https://github.com/VSDeadShot/commit-gen",
+    demo: "https://www.npmjs.com/package/@vedanshsharma/commit-gen",
   },
   {
     title: "Watch Next",
