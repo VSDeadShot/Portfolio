@@ -143,13 +143,15 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
             >
               <Github size={20} />
             </a>
-            <a 
-              href={project.demo} 
-              target="_blank" 
-              className="text-muted-foreground hover:text-white transition-colors"
-            >
-              <ExternalLink size={20} />
-            </a>
+            {project.demo !== project.github && (
+              <a
+                href={project.demo}
+                target="_blank"
+                className="text-muted-foreground hover:text-white transition-colors"
+              >
+                <ExternalLink size={20} />
+              </a>
+            )}
           </div>
         </div>
 
