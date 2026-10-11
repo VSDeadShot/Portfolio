@@ -33,3 +33,6 @@ Personal portfolio site for Vedansh Sharma (Software Engineer / Competitive Prog
 ## Workflow rules
 - Propose one change at a time and wait for local review before moving to the next; only `git commit`/`git push` after the user explicitly approves that specific change.
 - Never commit or push notes/handoff/scratch files (e.g. `AI_HANDOFF.md`, `repos.json`, ad hoc logs) to the repo.
+
+## Backlog
+- Pre-existing lint debt: 20 errors / 14 warnings on main as of 2026-10-11 (Hero.tsx, InteractiveGrid.tsx, route.ts, …) — clean up in its own commit.
