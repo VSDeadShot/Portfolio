@@ -6,6 +6,13 @@ import { MouseEvent } from "react";
 
 const projects = [
   {
+    title: "Task Scheduler",
+    description: "A work-stealing thread pool library built in C++20, with per-worker deques, a future-based submit() API, and graceful drain-on-stop. Built test-first with GoogleTest and tested under ThreadSanitizer with both g++ and clang++.",
+    tags: ["C++20", "Concurrency", "GoogleTest", "ThreadSanitizer"],
+    github: "https://github.com/VSDeadShot/task-scheduler",
+    demo: "https://github.com/VSDeadShot/task-scheduler",
+  },
+  {
     title: "Bixby PC Navigator",
     description: "An advanced two-way bridge transforming Samsung's Bixby into a local AI orchestrator. Features secure local Node.js server relays, Google Gemini 2.5 LLM integration, and context-aware screen reading.",
     tags: ["Node.js", "Python", "Google Gemini 2.5", "Bixby"],
