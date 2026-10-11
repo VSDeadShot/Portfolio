@@ -13,6 +13,13 @@ const projects = [
     demo: "https://github.com/VSDeadShot/task-scheduler",
   },
   {
+    title: "Second-Brain Search",
+    description: "A Python CLI that answers questions about my own projects with citations — RAG over READMEs, docs and git history using Gemini embeddings and ChromaDB, with an eval suite of no-answer traps. Also runs as an MCP server for Claude Code and Desktop; private repos stay hidden and the server fails closed.",
+    tags: ["Python", "RAG", "MCP", "Gemini API", "ChromaDB"],
+    github: "https://github.com/VSDeadShot/second-brain-search",
+    demo: "https://github.com/VSDeadShot/second-brain-search",
+  },
+  {
     title: "Bixby PC Navigator",
     description: "An advanced two-way bridge transforming Samsung's Bixby into a local AI orchestrator. Features secure local Node.js server relays, Google Gemini 2.5 LLM integration, and context-aware screen reading.",
     tags: ["Node.js", "Python", "Google Gemini 2.5", "Bixby"],
